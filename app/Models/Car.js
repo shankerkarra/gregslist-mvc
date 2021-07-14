@@ -1,3 +1,4 @@
+
 export default class Car {
   // OBJECT DESCONSCTRUCTION
   // using the {} you can pull only the properties you care about off the incoming object
@@ -20,20 +21,20 @@ export default class Car {
   // }
 
   get Template() {
-    return `
-    <div class="col-md-3 col-sm-2 my-3">
-      <div class="car bg-light shadow">
-          <img src="${this.imgUrl}" class="w-100" alt="${this.make} ${this.model} car image">
-          <div class="p-3">
-              <div class="text-center">
-                  <p><b>${this.year} - ${this.make} - ${this.model}</b></p>
-              </div>
-              <p>${this.description}</p>
-              <p><em>$${this.price}</em></p>
-          </div>
-      </div>
-    </div>
-    `
+    // return `
+    // <div class="col-md-3 col-sm-2 my-3">
+    //   <div class="car bg-light shadow">
+    //       <img src="${this.imgUrl}" class="w-100" alt="${this.make} ${this.model} car image">
+    //       <div class="p-3">
+    //           <div class="text-center">
+    //               <p><b>${this.year} - ${this.make} - ${this.model}</b></p>
+    //           </div>
+    //           <p>${this.description}</p>
+    //           <p><em>$${this.price}</em></p>
+    //       </div>
+    //   </div>
+    // </div>
+    // `
   }
 
 }
