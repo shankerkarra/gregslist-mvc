@@ -1,9 +1,10 @@
 import { ProxyState } from "../AppState.js"
-import House from "./Models/House.js"
+import House from '../Models/House.js'
 
 class HousesService {
-  createhouse(rawdata) {
-    Proxystate.Houses = [...proxystate.Houses, new House(rawdata)]
+  createHouse(rawdata) {
+    debugger;
+    ProxyState.houses = [...ProxyState.houses, new House(rawdata)]
   }
 }
 

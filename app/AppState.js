@@ -1,18 +1,18 @@
-// import Car from "./Models/Car.js"
 import House from "./Models/House.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
+// import Car from "./Models/Car.js"
 
 class AppState extends EventEmitter {
 
-  Houses = [
-    new house({
+  houses = [
+    new House({
       hinfo: '2 bedroom 2 bath',
       sqt: '1200 sft',
       address: '44 rocport status, Boise, ID 21045',
       price: '$200,000',
       imgurl: "https://ssl.cdn-redfin.com/v374.3.1/images/merch/generalImages/CompleteSolution_Q1_2020_557_YardSign2.jpg"
-    }), new house({
+    }), new House({
       hinfo: '1 bedroom 1 bath',
       sqt: '980 sft',
       address: '404 rocport status, Boise, ID 21045',
@@ -44,7 +44,6 @@ class AppState extends EventEmitter {
   // ]
 
 }
-
 
 export const ProxyState = new Proxy(new AppState(), {
   get(target, prop) {

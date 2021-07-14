@@ -11,7 +11,7 @@ export default class House {
     return `
      <div class="col-md-3 col-sm-2 my-3">
       <div class="house bg-light shadow">
-          <img src="${this.imgUrl}" class="w-100" alt="${this.hinfo} ${this.sqt} car image">
+          <img src="${this.imgurl}" class="w-100" alt="${this.hinfo} ${this.sqt} car image">
           <div class="p-3">
               <div class="text-center">
                   <p><b>${this.hinfo} - ${this.sqt} </b></p>

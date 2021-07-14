@@ -25,19 +25,19 @@
     <main class="container">
         <div class="row">
             <div class="col mt-2">
-                <form class="d-flex p-3 justify-align-center" onsubmit="app.houseController.createHouse()">
+                <form class="d-flex p-3 justify-align-center" onsubmit="app.housesController.createHouse()">
                     <div class="form-group m-2">
-                        <label for="houseinfo">H Info</label>
-                        <input type="houseinfo" name="houseinfo" id="houseinfo" class="form-control"
-                            placeholder="H Info..." required>
+                        <label for="hinfo">H Info</label>
+                        <input type="text" name="hinfo" id="hinfo" class="form-control" placeholder="H Info..."
+                            required>
                     </div>
                     <div class="form-group m-2">
                         <label for="sqt">Sqt</label>
-                        <input type="sqt" name="sqt" id="sqt" class="form-control" placeholder="Sqt..." required>
+                        <input type="number" name="sqt" id="sqt" class="form-control" placeholder="Sqt..." required>
                     </div>
                     <div class="form-group m-2">
                         <label for="address">Year</label>
-                        <input type="address" name="address" id="address" class="form-control" placeholder="Address..."
+                        <input type="text" name="address" id="address" class="form-control" placeholder="Address..."
                             required>
                     </div>
                     <div class="form-group m-2">
@@ -46,8 +46,8 @@
                             required min="1">
                     </div>
                     <div class="form-group m-2">
-                        <label for="imgUrl">Img Url</label>
-                        <input type="text" name="imgUrl" id="imgUrl" class="form-control" placeholder="Url...   ">
+                        <label for="imgurl">Img Url</label>
+                        <input type="text" name="imgurl" id="imgurl" class="form-control" placeholder="Url...   ">
                     </div>
                     <div class="d-flex align-items-center p-3 mt-4">
                         <button type="submit" class="btn btn-outline-success">Add</button>
